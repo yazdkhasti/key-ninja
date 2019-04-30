@@ -1,0 +1,49 @@
+<div class="modal-header">
+  <h5 class="modal-title">Create/Edit Customer</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="activeModal.close()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <form #form="ngForm" >
+    <div class="form-group">
+      <label for="nameInput">First Name</label>
+      <input type="text" class="form-control" id="nameInput" name="firstname" placeholder="First Name"
+        [(ngModel)]="customer.firstname"  #firstname="ngModel"
+        required ngbAutofocus>
+      <div class="invalid-feedback">
+        <div *ngIf="firstname.errors?.required">
+          First name is required.
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="lastNameInput">Password</label>
+      <input type="text" class="form-control" id="lastNameInput" name="lastname" placeholder="Last Name"
+        [(ngModel)]="customer.lastname"   #lastname="ngModel"
+        required>
+      <div class="invalid-feedback">
+        <div *ngIf="lastname?.errors?.required">
+          Last name is required.
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="emailInput">Email address</label>
+      <input type="email" class="form-control"  id="emailInput" name="email"
+        placeholder="Email" [(ngModel)]="customer.email" #email="ngModel" required email>
+      <div class="invalid-feedback">
+        <div *ngIf="email?.errors?.required">
+          Email is required.
+        </div>
+        <div *ngIf="email?.errors?.email">
+            Email is not correct.
+          </div>
+      </div>
+    </div>
+  </form>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-primary" (click)="save()" [disabled]="form.invalid">Save
+    changes</button>
+</div>

@@ -1,0 +1,31 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Email</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let customer of customers;let i=index">
+            <th scope="row">{{i+1}}</th>
+            <td>{{customer.firstname}}</td>
+            <td>{{customer.lastname}}</td>
+            <td>{{customer.email}}</td>
+            <td class="text-right">
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary" (click)="update(customer)"><i class="fas fa-edit"></i></button>
+                <button type="button" class="btn btn-secondary" (click)="delete(customer)"><i class="far fa-trash-alt"></i></button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
