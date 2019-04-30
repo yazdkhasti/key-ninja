@@ -29,7 +29,7 @@ app.use('/',  customers.router);
 
 
 //Angular app
-var angularPath = path.join(__dirname, './dist/key-ninja');
+var angularPath = path.join(__dirname, './frontend/dist');
 var angularIndexPath = path.join(angularPath, './index.html');
 
 app.use('/',  express.static(angularPath));
