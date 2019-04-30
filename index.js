@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-process.env.PORT = '80';
+
 process.env.NODE_ENV = 'production';
 
 var app = require('./server/app');
