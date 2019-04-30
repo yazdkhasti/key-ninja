@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { Customer } from '../model/customer';
 import { CustomerService } from '../services/customer.service';
-import { EventsService } from 'src/app/shared/services/events.service';
+import { EventsService } from '../../shared/services/events.service';
 
 @Component({
   selector: 'app-customer',

@@ -10,21 +10,21 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 //Connect to db
-var db = require('./server/shared/model');
+var db = require('./backend/shared/model');
 db.init();
 
 //Load middlewares
-var helper = require('./server/shared/middlewares/helper');
+var helper = require('./backend/shared/middlewares/helper');
 app.use(helper.middleware);
 
-var auth = require('./server/shared/middlewares/auth');
+var auth = require('./backend/shared/middlewares/auth');
 app.use(auth.middleware);
 
 //Load Modules
-var users = require('./server/users');
+var users = require('./backend/users');
 app.use('/',  users.router);
 
-var customers = require('./server/customers');
+var customers = require('./backend/customers');
 app.use('/',  customers.router);
 
 

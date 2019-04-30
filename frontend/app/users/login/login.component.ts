@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { UsersService } from '../services/users.service';
 import { Login } from '../model/login';
-import { AuthService } from 'src/app/shared/services/auth.service';
+import { AuthService } from '../../shared/services/auth.service';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',

@@ -3,7 +3,7 @@ import { CustomerService } from '../services/customer.service';
 import { Observable, Subscription } from 'rxjs';
 import { Customer } from '../model/customer';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { ConfirmComponent } from 'src/app/shared/components/confirm.component';
+import { ConfirmComponent } from '../../shared/components/confirm.component';
 import { CustomerComponent } from '../customer/customer.component';
 
 
