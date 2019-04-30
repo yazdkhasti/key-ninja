@@ -7,7 +7,7 @@
 
 process.env.NODE_ENV = 'production';
 
-var app = require('./server/app');
+var app = require('./app');
 var debug = require('debug')('key-ninja-backend:server');
 var http = require('http');
 
