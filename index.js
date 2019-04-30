@@ -4,6 +4,9 @@
  * Module dependencies.
  */
 
+process.env.PORT = '80';
+process.env.NODE_ENV = 'production';
+
 var app = require('./server/app');
 var debug = require('debug')('key-ninja-backend:server');
 var http = require('http');

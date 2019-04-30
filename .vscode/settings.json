@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/92994714-e852-4f94-bc26-677d26b77831/resourceGroups/primary/providers/Microsoft.Web/sites/key-ninja",
+    "appService.deploySubpath": ""
+}
