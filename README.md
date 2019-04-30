@@ -4,10 +4,9 @@ This project is built using the MEAN stack.
 
 ## Front-end
 
-Latest version of angular is used for building the front-end. 
-
-Front-end key features:
-
+ Front-end key features:
+ 
+- Angular 7.2 is used for building the front-end. 
 - Project is structured using Angular official styles guide.
 - Lazy loading is used for loading the customers module
 - Bootstrap 4 is used for layout and styles.
