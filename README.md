@@ -1,27 +1,30 @@
 # KeyNinja
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+This project is built using MEAN stack. 
 
-## Development server
+## Front-end
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Latest version of angular is used for building the front-end. 
 
-## Code scaffolding
+Front-end key features:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Project is structured using Angular official styles guide.
+- Lazy loading is used for loading the customers module
+- Bootstrap 4 is used for layout and styles.
+- Angular material is just used for side-menu.
+- Events are used for communicating between views. (customers module).
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Back-end
 
-## Running unit tests
+Back-end key features:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Expressjs is used for building the api.
+- Same style guide as front-end is used for structuring the back-end.(there are other style guides for Expressjs but I preferred to use the same as front-end).
+-MongoDB is used for storing data and mongoose is used for communicating with it.
+-Bearer tokens are used for authentication and a middleware with the name "auth" is used for authentication and filtering unauthorized requests.
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+

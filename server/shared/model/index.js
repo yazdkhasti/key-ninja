@@ -7,6 +7,7 @@ module.exports.init = () => {
         if (err) {
             console.log("Database connection error:", err);
         } else {
+            mongoose.set('useFindAndModify', false);
             console.log("Database connected");
         }
     });
