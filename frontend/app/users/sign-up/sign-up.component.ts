@@ -26,9 +26,10 @@ export class SignUpComponent implements OnInit {
     this.userService.signUp(this.vm).subscribe(() => {
       this.userService.login(this.vm).subscribe(() => {
         this.auth.navigateMain();
-      })
+      });
     }, (r) => {
-      this.errorMsg = r.error || "an error occured.";
+      let httpError = r.error;
+      this.errorMsg = httpError.error || 'an error occured.';
     });
   }
 }
